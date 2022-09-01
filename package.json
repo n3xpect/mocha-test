@@ -1,0 +1,23 @@
+{
+  "name": "mocha-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test:custom": "mocha -R mocha-json-output-reporter",
+    "test:browser": "live-server --port=9000 --mount=/:public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "mocha-json-output-reporter": "^2.0.1"
+  }
+}
