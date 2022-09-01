@@ -6,9 +6,9 @@ chai.use(chaiHttp);
 chai.should();
 
 chai.use(chaiHttp);
-describe('Root url test', () => {
+describe('http server', () => {
   describe('/GET', () => {
-    it('tum kullanicilar', (done) => {
+    it('tum kullanicilar don', (done) => {
       chai.request(server)
         .get('/api/users')
         .end((err, res) => {
